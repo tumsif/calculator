@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator excersise</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="calculator">
+        <div class="display">
+          <p id="display">0</p>
+        </div>
+        <div class="calc-buttons">
+          <div class="row">
+            <div class="button-container">
+              <button onclick="remainder()">REM</button>
+            </div>
+            <div class="button-container">
+              <button value="(" class="inputs" onclick="appendDisplay('(')">
+                (
+              </button>
+            </div>
+            <div class="button-container">
+              <button value=")" class="inputs" onclick="appendDisplay(')')">
+                )
+              </button>
+            </div>
+            <div class="button-container">
+              <button onclick="clearLastElement()" class="bg-orange">
+                DEL
+              </button>
+            </div>
+            <div class="button-container">
+              <button onclick="clearAllDisplay()" class="bg-red">AC</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="button-container">
+              <button value="cos(" onclick="appendDisplay('cos(')">
+                cos()
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="sin(" onclick="appendDisplay('sin(')">
+                sin()
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="tan(" onclick="appendDisplay('tan(')">
+                tan()
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="/" class="inputs" onclick="appendDisplay('/')">
+                &#247;
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="button-container">
+              <button value="7" class="inputs" onclick="appendDisplay('7')">
+                7
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="8" class="inputs" onclick="appendDisplay('8')">
+                8
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="9" class="inputs" onclick="appendDisplay('9')">
+                9
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="*" class="inputs" onclick="appendDisplay('*')">
+                x
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="button-container">
+              <button value="4" class="inputs" onclick="appendDisplay('4')">
+                4
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="5" class="inputs" onclick="appendDisplay('5')">
+                5
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="6" class="inputs" onclick="appendDisplay('6')">
+                6
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="-" class="inputs" onclick="appendDisplay('-')">
+                -
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="button-container">
+              <button value="1" class="inputs" onclick="appendDisplay('1')">
+                1
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="2" class="inputs" onclick="appendDisplay('2')">
+                2
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="3" class="inputs" onclick="appendDisplay('3')">
+                3
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="+" class="inputs" onclick="appendDisplay('+')">
+                +
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="button-container">
+              <button
+                value="/100"
+                class="inputs"
+                onclick="appendDisplay('/100')"
+              >
+                %
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="0" class="inputs" onclick="appendDisplay('0')">
+                0
+              </button>
+            </div>
+            <div class="button-container">
+              <button value="." class="inputs" onclick="appendDisplay('.')">
+                .
+              </button>
+            </div>
+            <div class="button-container">
+              <button class="bg-green" onclick="calculate()">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
